@@ -1,0 +1,23 @@
+{
+  "name": "nodespace",
+  "version": "0.0.1",
+  "description": "Sample NodeJS application hosted on Apache server.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mykkro/nodespace.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Apache"
+  ],
+  "author": "Mykkro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mykkro/nodespace/issues"
+  }
+}

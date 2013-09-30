@@ -1,0 +1,20 @@
+<VirtualHost *:80>
+     ServerAdmin your@email.com
+     ServerName nodespace.org
+     ServerAlias www.nodespace.org
+ 
+     ProxyRequests off
+ 
+     <Proxy *>
+          Order deny,allow
+          Allow from all
+     </Proxy>
+ 
+     <Location />
+           ProxyPass http://localhost:3333/
+           ProxyPassReverse http://localhost:3333/
+     </Location>
+     DocumentRoot /home/myrousz/Work/nodespace/public
+     ErrorLog /home/myrousz/Work/nodespace/logs/error.log
+     CustomLog /home/myrousz/Work/nodespace/logs/access.log combined
+</VirtualHost>
